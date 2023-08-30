@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: dodgerblue;
+  --color-light: white;
+  --border-radius-one: 15px;
+  --border-radius-two: 20px;
+  --box-shadow-one: 0 0 5px rgb(237, 237, 237);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* top_bar */
+.top_bar {
+  width: 76rem;
+  height: 70%;
+  background-color: beige;
+  margin-bottom: auto;
+  display: flex;
+  gap: 2rem;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+.fa_solid {
+  color: blue;
+  margin-right: 10px;
+}
+/* navbering-width */
+.navbering-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* header */
+.header {
+  width: 80%;
+  height: 200px;
+  background-color: blueviolet;
+  margin-bottom: 20ox;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbering {
+  display: flex;
+  justify-content: space-between;
+}
+.navbering .logo {
+  width: 50px;
+}
+.navbering .logo > img {
+  width: 50px;
+}
+.navber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navber imges {
+  width: 70px;
+  color: blue;
+}
+.navber ul {
+  display: flex;
+  list-style: none;
+}
+.navber {
+  display: flex;
+}
+.navber ul li a {
+  display: flex;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Khmer OS Battambang;
+  color: #060d13;
+  padding: 7px 15px;
+}
+.navber ul li a:hover {
+  background-color: rgba(19, 130, 228, 0.619);
+  color: #ffffff;
+  border-radius: 3px;
+}
+.navber-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* navber-b */
+.dropdown {
+  width: 130px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+select {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 7px 10px 7px 0px;
+  color: hwb(0 1% 92%);
+  font-size: 18px;
+  font-family: Khmer OS Battambang;
+  cursor: pointer;
+}
+select:hover {
+  color: brown;
+}
+.search {
+  width: 500px;
+  background-color: #ffffff;
+  height: 45px;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.search input {
+  width: 100rem;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  height: 40px;
+}
+.cart {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+  width: 80px;
+  font-size: 18px;
+}
+.cart p {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: red;
+  color: #ffffff;
+}
+.container-width {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* button */
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  /* padding: 1rem 2.5rem; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--color-light);
+  cursor: pointer;
+}
+.btn-primary {
+  color: #d5bdea;
+  background-color: var(--primary-color);
+}
+.btn-secondary {
+  background-color: gold;
+}
+.btn-accent {
+  background-color: lightgray;
+}
+.btn-block {
+  width: 100%;
+}
+h3 {
+  font-family: Khmer OS Battambang;
+  font-size: 18px;
+  background-color: cyan;
+  border-radius: 15px 15px 0 0;
+}
+.grid-1x2 {
+  font-family: Khmer OS Battambang;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-1x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.grid-1x4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .grid-1x3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-1x2 {
+    grid-template-columns: 1fr;
+  }
+  .grid-1x3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-1x4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.popular-courses {
+  padding: 0 2rem;
+}
+.pc-heading {
+  text-align: center;
+  font-size: 5rem;
+  margin: 7rem 0;
+}
+.course-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius-two);
+  box-shadow: var(--box-shadow-one);
+}
+.course-image {
+  width: 100%;
+  overflow: hidden;
+}
+.course-image > img {
+  width: 100%;
+}
+.course-heading,
+.course-card > p {
+  text-align: center;
+}
+.course-card > p {
+  margin: 1.5rem 0;
+}
+.btn-container {
+  display: flex;
+  gap: 1.5rem;
+}
+/* footer */
+.footer {
+  margin-top: 50px;
+  background-color: rgb(4, 19, 49);
+  padding: 8rem 30rem;
+}
+p {
+  color: #ffffff;
+}
+.copyright {
+  color: rgb(252, 248, 248);
+}
